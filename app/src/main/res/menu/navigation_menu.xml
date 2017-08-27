@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="My account"/>
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@mipmap/ic_navigate_before_black_24dp"
+        android:title="Logout" />
+
+    <item
+        android:id="@+id/nav_account1"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="My account"/>
+    <item
+        android:id="@+id/nav_settings1"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_logout1"
+        android:icon="@mipmap/ic_navigate_before_black_24dp"
+        android:title="Logout" />
+    <item
+        android:id="@+id/nav_account2"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="My account"/>
+    <item
+        android:id="@+id/nav_settings2"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_logout2"
+        android:icon="@mipmap/ic_navigate_before_black_24dp"
+        android:title="Logout" />
+    <item
+        android:id="@+id/nav_account3"
+        android:icon="@mipmap/ic_person_black_24dp"
+        android:title="My account"/>
+    <item
+        android:id="@+id/nav_settings3"
+        android:icon="@mipmap/ic_settings_black_24dp"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_logout3"
+        android:icon="@mipmap/ic_navigate_before_black_24dp"
+        android:title="Logout" />
+
+</menu>
