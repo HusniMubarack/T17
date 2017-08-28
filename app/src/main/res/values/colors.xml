@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#7fd993</color>
-    <color name="colorPrimaryDark">#309f55</color>
-    <color name="navHeader">#304d2d</color>
-    <color name="navBody">#805b863a</color>
-    <color name="navItemColor">#adcfa6</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#27245e</color>
+    <color name="colorPrimaryDark">#0d1431</color>
+
+    <color name="navHeader">#bf2c2248</color>
+
+    <color name="navBody">#b01f2e4e</color>
+    <color name="navItemText">#e7f2ff</color>
+
+
+    <color name="colorAccent">#e71a60</color>
     <color name="textColorPrimary">#f2f2f5</color>
     <color name="navItemImageColor">#9d1e303d</color>
 </resources>
