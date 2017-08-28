@@ -6,6 +6,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 
@@ -15,16 +16,13 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mToggle;
     private Toolbar mToolbar;
     private ArrayList<DrawerListItem> mDrawerItems= new ArrayList<>();
+    private ListView mDrawerList;
+    private DrawerAdapter mDrawerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mToolbar = (Toolbar) findViewById(R.id.main_action_bar);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("tathva '17");
-        getSupportActionBar().setIcon(R.drawable.tathva_man);
 
         mDrawerItems.add(new DrawerListItem(R.drawable.tathva_man,"Events"));
         mDrawerItems.add(new DrawerListItem(R.drawable.tathva_man,"Workshops"));
@@ -35,6 +33,15 @@ public class MainActivity extends AppCompatActivity {
         mDrawerItems.add(new DrawerListItem(R.drawable.tathva_man,"Wheels"));
         mDrawerItems.add(new DrawerListItem(R.drawable.tathva_man,"Blitzkrieg"));
 
+        mDrawerAdapter = new DrawerAdapter(this,mDrawerItems);
+        mDrawerList=(ListView)findViewById(R.id.drawer_list);
+
+        mDrawerList.setAdapter(mDrawerAdapter);
+
+        mToolbar = (Toolbar) findViewById(R.id.main_action_bar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("tathva '17");
+        getSupportActionBar().setIcon(R.drawable.tathva_man);
 
         mDrawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
 
@@ -44,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
         mToggle.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
     }
 
     @Override

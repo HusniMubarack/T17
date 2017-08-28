@@ -18,8 +18,7 @@
             layout="@layout/main_action_bar"
             android:layout_height="wrap_content"
             android:layout_width="0dp"
-            tools:layout_editor_absoluteY="25dp"
-            tools:layout_editor_absoluteX="0dp" />
+            />
 
         <TextView
             android:id="@+id/textView"
@@ -28,7 +27,7 @@
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
             android:layout_weight="1"
-            android:text="TextView"
+            android:text="@string/close"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -41,19 +40,24 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header"
+        android:id="@+id/navigation"
         android:background="@color/navBody"
-        app:itemTextColor="@color/navItemColor"
         app:theme="@style/tathvaDrawer"
+        android:fitsSystemWindows="true"
         >
-        <ListView
-            android:layout_width="264dp"
-            android:layout_height="84dp"
-            android:id="@+id/drawer_list"
-            tools:layout_editor_absoluteY="8dp"
-            tools:layout_editor_absoluteX="8dp">
 
-        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include layout="@layout/nav_header"/>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/drawer_list"
+                android:layout_weight="1"/>
+        </LinearLayout>
     </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>

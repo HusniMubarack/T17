@@ -7,25 +7,26 @@ package com.example.husnimubarack.t17;
 public class DrawerListItem {
     private int mImageId;
     private String mListItemName;
+    private boolean HaveImage=false;
+
+    public DrawerListItem(int ImageId, String ListItemName) {
+        super();
+        this.mImageId = ImageId;
+        this.mListItemName = ListItemName;
+        this.HaveImage=true;
+    }
 
     public int getmImageId() {
         return mImageId;
     }
 
-    public void setmImageId(int mImageId) {
-        this.mImageId = mImageId;
-    }
 
     public String getmListItemName() {
         return mListItemName;
     }
 
-    public void setmListItemName(String mListItemName) {
-        this.mListItemName = mListItemName;
-    }
 
-    public DrawerListItem(int mImageId, String mListItemName) {
-        this.mImageId = mImageId;
-        this.mListItemName = mListItemName;
+    public boolean isHaveImage() {
+        return HaveImage;
     }
 }
