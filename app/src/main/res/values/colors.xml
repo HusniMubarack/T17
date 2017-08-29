@@ -3,13 +3,14 @@
     <color name="colorPrimary">#27245e</color>
     <color name="colorPrimaryDark">#0d1431</color>
 
-    <color name="navHeader">#bf2c2248</color>
+    <color name="navHeader">#843904</color>
 
-    <color name="navBody">#b01f2e4e</color>
+    <color name="navBody">#601f2e4e</color>
     <color name="navItemText">#e7f2ff</color>
-
+    <color name="navItemImageColor">#9d333e46</color>
+    <color name="navItemSelected">#d8322f53</color>
 
     <color name="colorAccent">#e71a60</color>
     <color name="textColorPrimary">#f2f2f5</color>
-    <color name="navItemImageColor">#9d1e303d</color>
+
 </resources>

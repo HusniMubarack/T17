@@ -3,10 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
-    android:background="@color/navHeader"
+    android:layout_height="225dp"
+    android:background="@drawable/gradient_background_media"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="5dp"
+    >
     <ImageView
         android:id="@+id/nav_login_icon"
         android:layout_width="wrap_content"
